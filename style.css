@@ -754,9 +754,10 @@ input:focus-visible {
     pointer-events: none;
     opacity: 1;
     transform: none;
-    html[data-theme="tokyo"] .logo-wrap {
-        display: none;
-    }
+}
+
+html[data-theme="tokyo"] .logo-wrap {
+    display: none;
 }
 
 #app-3d {
