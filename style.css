@@ -243,6 +243,7 @@ html[data-theme="tokyo"] {
     --sp-text: #c0caf5;
     --sp-muted: #a9b1d6;
     --danger: #f7768e;
+    --bg-image: url("https://i.ibb.co/hRBbGVrf/HIRys4-Wa-IAA4-FLA.jpg");
 }
 
 html[data-theme="gruvbox"] {
@@ -413,15 +414,15 @@ html[data-clock-style="dither"] #clock {
     font-weight: 700;
     letter-spacing: 0.04em;
     display: inline-block;
-    background-image: 
+    background-image:
         repeating-conic-gradient(#ffffff 0 25%, transparent 0 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.95) 0%, rgba(var(--el), 0.75) 40%, transparent 75%),
         linear-gradient(135deg, #ffffff 0%, rgba(var(--el), 0.85) 25%, rgba(var(--ink), 0.95) 50%, rgba(var(--el), 0.8) 75%, #ffffff 100%);
-    background-size: 
+    background-size:
         4px 4px,
         220% 220%,
         300% 300%;
-    background-position: 
+    background-position:
         0 0,
         0% 0%,
         0% 50%;
@@ -435,25 +436,25 @@ html[data-clock-style="dither"] #clock {
 
 @keyframes ditherNoiseWave {
     0% {
-        background-position: 
+        background-position:
             0 0,
             10% 20%,
             0% 50%;
     }
     33% {
-        background-position: 
+        background-position:
             0 0,
             85% 15%,
             50% 100%;
     }
     66% {
-        background-position: 
+        background-position:
             0 0,
             95% 85%,
             100% 30%;
     }
     100% {
-        background-position: 
+        background-position:
             0 0,
             25% 95%,
             20% 0%;
@@ -465,11 +466,11 @@ html[data-clock-style="dither"] #clock .clock-sec,
 html[data-clock-style="dither"] #clock .clock-ampm {
     position: static;
     font-weight: 700;
-    background-image: 
+    background-image:
         repeating-conic-gradient(#ffffff 0 25%, transparent 0 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.95) 0%, rgba(var(--el), 0.75) 40%, transparent 75%),
         linear-gradient(135deg, #ffffff 0%, rgba(var(--el), 0.85) 25%, rgba(var(--ink), 0.95) 50%, rgba(var(--el), 0.8) 75%, #ffffff 100%);
-    background-size: 
+    background-size:
         4px 4px,
         220% 220%,
         300% 300%;
@@ -534,11 +535,11 @@ html[data-date-style="dither"] #date {
     font-size: 1rem;
     font-weight: 700;
     display: inline-block;
-    background-image: 
+    background-image:
         repeating-conic-gradient(#ffffff 0 25%, transparent 0 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.95) 0%, rgba(var(--el), 0.75) 40%, transparent 75%),
         linear-gradient(135deg, #ffffff 0%, rgba(var(--el), 0.85) 25%, rgba(var(--ink), 0.95) 50%, rgba(var(--el), 0.8) 75%, #ffffff 100%);
-    background-size: 
+    background-size:
         4px 4px,
         220% 220%,
         300% 300%;
