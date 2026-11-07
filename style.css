@@ -825,7 +825,7 @@ input:focus-visible {
 
        /* dock background */
        padding: 14px 20px;
-       background: rgba(var(--ink), 0.4);
+       background: rgba(var(--ink), 0.2);
        backdrop-filter: blur(8px);
        border: 1px solid rgba(var(--el), 0.25);
        border-radius: 14px;
