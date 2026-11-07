@@ -688,7 +688,7 @@ body {
 
     /* OPTIONAL: darken the picture so the clock/links stay readable.
        To use it, delete the 5 background-* lines above and
-       uncomment this block (raise/lower the 0.45 to taste):
+       uncomment this block (raise/lower the 0.45 to taste):    */
 
     background-color: var(--accent-light);
     background-image:
@@ -699,7 +699,6 @@ body {
     background-position: center, center, center;
     background-repeat: no-repeat;
     background-attachment: scroll, fixed, scroll;
-    */
 
     overflow-x: hidden;
     cursor: default;
