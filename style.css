@@ -22,6 +22,8 @@
      --theme-color (meta tag)
      --sp-background, --sp-dark-accent, --sp-accent,
      --sp-light-accent, --sp-highlight, --sp-text, --danger
+   Optional per theme:
+     --bg-image: url("https://...");  (page background picture)
    ============================================================ */
 
 :root,
@@ -313,6 +315,8 @@ html[data-theme="c64"] {
     --mono: "JetBrains Mono", ui-monospace, monospace;
     --type: "JetBrains Mono", ui-monospace, monospace;
     --bg-grad: linear-gradient(180deg, var(--accent) 10%, var(--accent-mid) 30%, var(--accent-light) 100%);
+    /* default: no picture. Themes can override this with url("https://...") */
+    --bg-image: none;
 
     --edge: 1.5rem;
     --panel-w: 360px;
@@ -671,7 +675,32 @@ body {
     min-height: 100dvh;
     font-family: var(--font);
     color: var(--white);
-    background: var(--bg-grad);
+
+    /* ---- page background ----
+       Layer 1 (top):    --bg-image (a theme's picture, or none)
+       Layer 2 (bottom): the theme gradient, always there as a fallback */
+    background-color: var(--accent-light);
+    background-image: var(--bg-image), var(--bg-grad);
+    background-size: cover, 100% 100%;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed, scroll;
+
+    /* OPTIONAL: darken the picture so the clock/links stay readable.
+       To use it, delete the 5 background-* lines above and
+       uncomment this block (raise/lower the 0.45 to taste):
+
+    background-color: var(--accent-light);
+    background-image:
+        linear-gradient(rgba(var(--ink), 0.45), rgba(var(--ink), 0.45)),
+        var(--bg-image),
+        var(--bg-grad);
+    background-size: 100% 100%, cover, 100% 100%;
+    background-position: center, center, center;
+    background-repeat: no-repeat;
+    background-attachment: scroll, fixed, scroll;
+    */
+
     overflow-x: hidden;
     cursor: default;
     -webkit-user-select: none;
