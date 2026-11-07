@@ -1625,3 +1625,12 @@ html[data-theme-view="dropdown"] #theme-select {
     background: rgba(var(--el), 0.3);
     color: #fff;
 }
+/* custom date + separator color */
+html[data-date-style="sans"] #date,
+html[data-date-style="mono"] #date {
+    color: #b7bdf8;
+}
+
+.seam {
+    color: #b7bdf8;
+}
