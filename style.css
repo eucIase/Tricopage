@@ -825,7 +825,7 @@ html[data-theme="tokyo"] .logo-wrap {
        font-family: var(--mono);
        font-size: 0.95rem;
        opacity: 1;
-       transform: none;
+       transform: translateY(-2px);
 
        /* dock background */
        padding: 14px 20px;
